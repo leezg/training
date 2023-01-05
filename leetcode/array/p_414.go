@@ -1,7 +1,6 @@
 package array
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -15,11 +14,13 @@ func thirdMax(nums []int) int {
 		ans = append(ans, math.MinInt)
 	}
 	for _, n := range nums {
-		for _, a := range ans {
+		for i, a := range ans {
 			if n == a {
 				break
 			} else if n > a {
-				fmt.Println(ans)
+				tmp := append(ans[:i+1], ans[i:]...)
+				tmp[i] = n
+				ans = tmp[:3]
 				break
 			}
 

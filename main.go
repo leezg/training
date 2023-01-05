@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"training/leetcode/array"
 )
 
 func main() {
@@ -9,8 +10,8 @@ func main() {
 	tmp := append(ans[:0], 9)
 
 	//414
-	//nums := []int{2, 2, 3, 1}
-	//array.ThirdMax(nums)
+	nums := []int{1, 2, 2, 4}
+	array.FindErrorNums(nums)
 
 	fmt.Println(ans)
 	fmt.Println(tmp)
