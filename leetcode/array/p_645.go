@@ -4,6 +4,8 @@ func FindErrorNums(nums []int) []int {
 	return findErrorNums(nums)
 }
 
+//todo: finish
+
 func findErrorNums(nums []int) []int {
 	n := len(nums)
 	count := make([]int, n+1)
