@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"training/leetcode/string"
+	"training/leetcode/array"
 )
 
 func main() {
-	s := "WQWRQQQW"
-	ans := string.BalancedString(s)
+	grid := [][]int{{1, 1, 0, 0}}
 
-	fmt.Println(ans)
+	fmt.Println(array.Largest1BorderedSquare(grid))
 }
