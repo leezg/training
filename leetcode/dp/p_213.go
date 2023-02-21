@@ -18,10 +18,3 @@ func rob2(nums []int) int {
 	}
 	return max(_rob(nums[:n-1]), _rob(nums[1:]))
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
