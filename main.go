@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	nums := []int{1, 2, 3, 3}
-	fmt.Println(array.FindDuplicates(nums))
+	nums := []int{0, 0, 1}
+	array.MoveZeroes(nums)
+	fmt.Println(nums)
 }
